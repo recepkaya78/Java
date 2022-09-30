@@ -1,4 +1,4 @@
-package miniProjeAsalSayi;
+
 
 import java.util.Iterator;
 
