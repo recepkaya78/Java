@@ -65,26 +65,25 @@ public class Main {
 		System.out.println("</ul>");
 		// get
 		// System.out.println(product1.name);
-		
-		IndividualCustomer individualCustomer = new  IndividualCustomer();		
-		individualCustomer.setId(1);		
+
+		IndividualCustomer individualCustomer = new IndividualCustomer();
+		individualCustomer.setId(1);
 		individualCustomer.setPhone("+31 619204547");
 		individualCustomer.setCustomerNumber("12345");
 		individualCustomer.setFirstName("Recep");
 		individualCustomer.setLastName("Kaya");
-		
-		
-		CorporateCustomer corporateCustomer = new  CorporateCustomer();
+
+		CorporateCustomer corporateCustomer = new CorporateCustomer();
 		corporateCustomer.setId(2);
 		corporateCustomer.setCompanyName("Kodlama.io");
-		corporateCustomer.setPhone("+31 619204547");
+		corporateCustomer.setPhone("+31 619204548");
 		corporateCustomer.setTaxNumber("222222222");
 		corporateCustomer.setCustomerNumber("1234567");
-		
-		Customer[]customers =  {individualCustomer,corporateCustomer};
-		
+
+		Customer[] customers = { individualCustomer, corporateCustomer };
+
 		for (Customer customer : customers) {
-			System.out.println(customer.getCustomerNumber()); //getFirstName ?
+			System.out.println(customer.getPhone()); // getFirstName ?
 		}
 	}
 }

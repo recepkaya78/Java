@@ -8,6 +8,13 @@ public class Main {
 		String ortaMetin = "Ilginizi cekebilir";
 		String altMetin = "Vade suresi";
 		int vade = 12;
+		
+		String vade1 = "12";
+		
+		//Wrapper class pars to integer
+		Integer a = Integer.parseInt(vade1); 
+		System.out.println(a);
+		
 		double dolarDun = 18.25;
 		double dolarBugun = 18.30;
 		boolean dolarDustuMu = true;
