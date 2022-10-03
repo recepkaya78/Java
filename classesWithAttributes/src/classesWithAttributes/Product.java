@@ -4,7 +4,7 @@ public class Product {
 	// atributes
 	// private sadece tanimlandigi blokta gecerlidir.
 	// encapsulation
-	//getter ve setterler baske yerden atributlere ulasmayi saglar.
+	// getter ve setterler baske yerden atributlere ulasmayi saglar.
 	private int id;
 	private String name;
 	private String description;
@@ -13,8 +13,26 @@ public class Product {
 	private String renk;
 	private String kod;
 
+	
+	// Patametreli contractor 
+	//Overload - Asiri yukleme)
+	public Product(int id, String name, String description, double price, int stockAmount, String renk) {
+		System.out.println("Yapici blok calisti");
+		this.id =id;
+		this.renk=renk;
+		this.name=name;
+		this.price=price;
+		this.description=description;
+		this.stockAmount=stockAmount;
+	}
+	
+	// Patametresiz contractor ()
+	public Product() {
+		
+	}
+
 	public void method() {
-		this.renk ="renk";
+		this.renk = "renk";
 	}
 
 	public int getId() {
@@ -66,12 +84,11 @@ public class Product {
 	}
 
 	public String getKod() {
-		return this.name.substring(0,1);
+		return this.name.substring(0, 1);
 	}
 
 	public void setKod(String kod) {
 		this.kod = kod;
 	}
-		
-	
+
 }
